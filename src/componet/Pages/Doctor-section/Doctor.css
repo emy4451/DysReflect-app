@@ -1,0 +1,37 @@
+.single__Doctor__item {
+    padding: 15px;
+  }
+  
+  .Doctor__img img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .enroll a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #17bf9e;
+  }
+  
+  .consultation,
+  .maladies,
+  .map {
+    font-size: 0.9rem;
+    color: #0a2b1e;
+    font-weight: 500;
+  }
+  
+  .consultation i,
+  .maladies i,
+  .map i {
+    font-weight: 400;
+  }
+  
+  .Doctor__title {
+    line-height: 2rem;
+  }
+  
+  .Doctor__top__left h2 {
+    font-weight: 600;
+  }

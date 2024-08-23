@@ -1,0 +1,42 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh; /* Prend toute la hauteur de la fenêtre */
+    background-color: #f0f0f0; /* Couleur de fond (optionnel) */
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -110%;
+  }
+  
+  .card {
+    display: flex;
+    width: 700px; /* Largeur de la carte */
+    padding: 10px;
+    border-radius: 15px; /* Rayon de bord arrondi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  .column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
+    margin: 20px; /* Espace entre les colonnes */
+  }
+  
+  .navigate-button {
+    padding: 10px 25px; /* Padding du bouton */
+    background-color:  rgb(223, 223, 41);; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bord arrondi */
+    cursor: pointer; /* Curseur en main */
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+  }
+  
+  .navigate-button:hover {
+    background-color: #0056b3; /* Couleur au survol */
+  }
+  
