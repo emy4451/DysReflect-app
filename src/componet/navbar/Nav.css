@@ -1,82 +1,63 @@
-.container{
-  position: relative;
-  top: 0;
-  left: 0;
+.navbar-container {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
 }
+
 .navbar {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: transparent; 
-    width: 100vw;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin: 0 20px; 
-    margin-right: 110px;
-    text-decoration: none;
-    color: rgb(12, 12, 12);
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .nav__right p {
-    font-weight: 500;
-    color: #0a2b1e;
-    font-size: 1.1rem;
-  }
-  
-  .nav__right p i {
-    font-size: 1.3rem;
-  }
-  .logo {
-    margin-right: 20px;
-  }
-  
-  .logo-img {
-    height: 80px; /* Ajustez la taille selon vos besoins */
-    cursor: pointer;
-  }  
-  
-  .nav-buttons {
-    display: flex;
-  }
-  
-  .nav-button {
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-left: 10px;
-    font-weight: bold;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  i.ri-phone-line {
-    font-size: 1.2em; /* ou une taille adaptée */
-    color: black; /* Assurez-vous que la couleur est visible */
-    vertical-align: middle; /* Aligner l'icône avec le texte */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-  .register-button {
-    background-color: #ffcc23;
-  }
-  
-  .login-button {
-    background-color: #fff020;
-  }
-  
-  .nav-button p {
-    font-weight: bold;
-    color: white;
-  }
-  
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 60px;
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav__right p {
+  font-weight: 500;
+  color: #0a2b1e;
+  font-size: 1.1rem;
+  margin-right: 20px;
+}
+
+.nav__right p i {
+  font-size: 1.3rem;
+}
+
+.nav-button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button {
+  background-color: #dfdf29;
+}
+
+.login-button {
+  background-color: #dfdf29;
+}
+
+.nav-button:hover {
+  opacity: 0.8;
+}

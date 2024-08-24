@@ -3,12 +3,17 @@ import React, { useState } from "react";
 import { auth } from "../../firebase";
 import "./signUp.css"; // Import a CSS file for styling
 
-import {useContext} from 'react'
+import { useContext } from 'react'
 import { NavContext } from "../navbar/router";
+
+import { useNavigate } from "react-router-dom";
 const SignUp = () => {
-  
-  const {setShowNav} = useContext(NavContext);
+
+  const { setShowNav } = useContext(NavContext);
   setShowNav(false)
+
+  const navigate = useNavigate()
+
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -23,13 +28,8 @@ const SignUp = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log("User created:", userCredential);
-        console.log({
-          nom,
-          prenom,
-          age,
-          numeroTelephone,
-          pays,
-        });
+        localStorage.setItem("loggedIn", "true")
+        navigate("/home")
       })
       .catch((error) => {
         console.log(error);

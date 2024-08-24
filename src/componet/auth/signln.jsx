@@ -5,8 +5,10 @@ import "./Signin.css"; // Import a CSS file for styling
 
 import {useContext} from 'react'
 import { NavContext } from "../navbar/router";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const navigate = useNavigate()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -17,7 +19,9 @@ const SignIn = () => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
+        localStorage.setItem("loggedIn", "true");
         console.log("Logged in:", userCredential);
+        navigate("/home")
       })
       .catch((error) => {
         console.log(error);
